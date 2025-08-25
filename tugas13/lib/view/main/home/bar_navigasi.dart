@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:flutter/material.dart';
 import 'package:tugas13/view/main/about/about.dart';
 import 'package:tugas13/view/main/home/add_list.dart';
@@ -31,7 +33,7 @@ class _MainScreenState extends State<MainScreen> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            label: 'Home',
+            label: 'Beranda',
             // activeIcon: Icon(Icons.abc_outlined),
           ),
           BottomNavigationBarItem(icon: Icon(Icons.add), label: 'Tambah'),
@@ -42,7 +44,7 @@ class _MainScreenState extends State<MainScreen> {
         ],
 
         currentIndex: _selectedIndex,
-        selectedItemColor: const Color.fromARGB(255, 240, 200, 241),
+        selectedItemColor: const Color.fromARGB(255, 94, 144, 24),
         unselectedItemColor: Colors.black,
         onTap: (value) {
           print(value);

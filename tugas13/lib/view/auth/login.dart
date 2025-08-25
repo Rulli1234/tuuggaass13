@@ -6,11 +6,6 @@ import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:tugas13/extension/navigation.dart';
 import 'package:tugas13/shared_preferences/shared_preferences.dart';
-// import 'package:shopping_app/extension/navigation.dart';
-// import 'package:shopping_app/shared_preferences/shared_preferences.dart';
-// import 'package:shopping_app/sqflite/db_helper.dart';
-// import 'package:shopping_app/view/auth/register.dart';
-// import 'package:shopping_app/view/main/bar_navigasi.dart';
 import 'package:tugas13/sqflite/db_helper.dart';
 import 'package:tugas13/view/main/home/bar_navigasi.dart';
 import 'package:tugas13/view/register.dart';
@@ -44,7 +39,7 @@ class _LoginState extends State<Login> {
                   height: 50,
                   width: double.infinity,
                   child: Text(
-                    "Halo!, Selamat Datang 👋",
+                    "Selamat Datang Brother",
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.w900),
                   ),
                 ),
@@ -52,7 +47,7 @@ class _LoginState extends State<Login> {
                   height: 40,
                   width: double.infinity,
                   child: Text(
-                    "Masuk sekarang dan catat semua kebutuhanmu dengan mudah",
+                    "Silahkan masukkan akun anda Brother",
                     style: TextStyle(fontSize: 15, fontWeight: FontWeight.w200),
                     textAlign: TextAlign.left,
                   ),
@@ -62,7 +57,7 @@ class _LoginState extends State<Login> {
                 SizedBox(
                   width: double.infinity,
                   child: Text(
-                    "Email",
+                    "Surel",
                     style: TextStyle(fontWeight: FontWeight.w200),
                   ),
                 ),
@@ -76,10 +71,10 @@ class _LoginState extends State<Login> {
                   ),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
-                      return "Email Tidak Valid";
+                      return "Surel Tidak Valid";
                     }
                     if (!value.contains("@")) {
-                      return "Email tidak valid";
+                      return "Surel tidak valid";
                     }
                     return null;
                   },
@@ -90,7 +85,7 @@ class _LoginState extends State<Login> {
                 SizedBox(
                   width: double.infinity,
                   child: Text(
-                    "Password",
+                    "Kata Sandi",
                     style: TextStyle(fontWeight: FontWeight.w200),
                   ),
                 ),
@@ -119,7 +114,7 @@ class _LoginState extends State<Login> {
                   ),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
-                      return "Password tidak boleh kosong";
+                      return "Kata Sandi tidak boleh kosong";
                     }
                     return null;
                   },
@@ -132,7 +127,7 @@ class _LoginState extends State<Login> {
                   child: Align(
                     alignment: Alignment.centerRight,
                     child: Text(
-                      "Lupa Password?",
+                      "Lupa Kata Sandi?",
                       style: TextStyle(
                         color: const Color.fromARGB(255, 145, 57, 105),
                         fontWeight: FontWeight.bold,
@@ -171,13 +166,8 @@ class _LoginState extends State<Login> {
                                 content: Column(
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
+                                    Text("Berhasil login Brother"),
                                     SizedBox(height: 50),
-                                    Lottie.asset(
-                                      "assets/images/animations/successgraduation.json",
-                                      width: 90,
-                                      height: 100,
-                                      fit: BoxFit.cover,
-                                    ),
                                   ],
                                 ),
                                 actions: [
@@ -207,7 +197,7 @@ class _LoginState extends State<Login> {
                                 content: Column(
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
-                                    Text("Email atau password salah"),
+                                    Text("Surel atau Kata Sandi salah"),
                                     SizedBox(height: 20),
                                     Lottie.asset(
                                       "assets/images/animations/Fail.json",
@@ -232,7 +222,7 @@ class _LoginState extends State<Login> {
                     },
 
                     child: Text(
-                      "Masuk",
+                      "Masuk Brother",
                       style: TextStyle(
                         color: const Color.fromARGB(255, 2, 2, 2),
                       ),
@@ -249,7 +239,7 @@ class _LoginState extends State<Login> {
                       style: TextStyle(color: Colors.black),
                       children: [
                         TextSpan(
-                          text: "Daftar Sekarang",
+                          text: "Daftar Sekarang Brother",
                           style: TextStyle(
                             color: const Color.fromARGB(255, 145, 57, 105),
                             fontWeight: FontWeight.bold,
@@ -269,9 +259,9 @@ class _LoginState extends State<Login> {
                   ),
                 ),
 
-                Lottie.asset(
-                  "assets/images/animations/Shopping Cart Loader.json",
-                ),
+                // Lottie.asset(
+                //   "assets/images/animations/Shopping Cart Loader.json",
+                // ),
               ],
             ),
           ),
@@ -285,7 +275,9 @@ class _LoginState extends State<Login> {
     final password = passwordController.text.trim();
     if (email.isEmpty || password.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text("Email dan Password tidak boleh kosong")),
+        const SnackBar(
+          content: Text("Surel dan Kata Sandi tidak boleh kosong"),
+        ),
       );
       // isLoading = false;
 
@@ -297,7 +289,7 @@ class _LoginState extends State<Login> {
       context.pushReplacementNamed(login());
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text("Email atau Password salah")),
+        const SnackBar(content: Text("Surel atau Kata Sandi salah")),
       );
     }
   }

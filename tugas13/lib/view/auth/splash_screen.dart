@@ -1,9 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
-// import 'package:shopping_app/extension/navigation.dart';
-// import 'package:shopping_app/shared_preferences/shared_preferences.dart';
-// import 'package:shopping_app/view/auth/login.dart';
-// import 'package:shopping_app/view/main/bar_navigasi.dart';
 import 'package:tugas13/extension/navigation.dart';
 import 'package:tugas13/shared_preferences/shared_preferences.dart';
 import 'package:tugas13/view/auth/login.dart';
@@ -43,11 +38,7 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Lottie.asset("assets/images/animations/List.json"),
-            SizedBox(height: 20),
-            Text("Kuy Belanja Brother"),
-          ],
+          children: [SizedBox(height: 20), Text("Kuy Belanja Brother")],
         ),
       ),
     );

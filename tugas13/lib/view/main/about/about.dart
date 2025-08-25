@@ -20,32 +20,13 @@ class _AboutPageState extends State<AboutPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Pengaturan"),
-        backgroundColor: const Color.fromARGB(255, 243, 191, 227),
+        backgroundColor: const Color.fromARGB(255, 92, 189, 59),
       ),
 
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
           children: [
-            Card(
-              child: Container(
-                height: 180,
-                width: double.infinity,
-                decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 246, 202, 252),
-                ),
-                child: Center(
-                  child: Lottie.asset(
-                    'assets/images/animations/Welcome.json',
-                    fit: BoxFit.contain,
-                    repeat: true,
-                    reverse: false,
-                    animate: true,
-                  ),
-                ),
-              ),
-            ),
-
             ListTile(
               leading: Icon(Icons.person),
               title: Text("Pengaturan Akun"),
@@ -63,7 +44,7 @@ class _AboutPageState extends State<AboutPage> {
               title: Text("Mode  Gelap"),
             ),
             Divider(),
-            SizedBox(height: 70),
+            SizedBox(height: 24),
 
             ElevatedButton(
               onPressed: () {
@@ -71,7 +52,7 @@ class _AboutPageState extends State<AboutPage> {
 
                 context.pushReplacementNamed(Login.id);
               },
-              child: Text("LogOut"),
+              child: Text("Keluar Akun"),
             ),
           ],
         ),

@@ -1,9 +1,6 @@
 // import 'package:flutter/gestures.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
-// import 'package:shopping_app/model/user.dart';
-// import 'package:shopping_app/sqflite/db_helper.dart';
 import 'package:tugas13/model/user.dart';
 import 'package:tugas13/sqflite/db_helper.dart';
 
@@ -37,7 +34,7 @@ class _DaftarAkunState extends State<DaftarAkun> {
                   height: 50,
                   width: double.infinity,
                   child: Text(
-                    "Halo!, Selamat Daftar 👋",
+                    "Selamat Datang Brother",
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.w900),
                   ),
                 ),
@@ -45,7 +42,7 @@ class _DaftarAkunState extends State<DaftarAkun> {
                   height: 40,
                   width: double.infinity,
                   child: Text(
-                    "Masuk sekarang dan catat semua kebutuhanmu dengan mudah",
+                    "Brother ",
                     style: TextStyle(fontSize: 15, fontWeight: FontWeight.w200),
                     textAlign: TextAlign.left,
                   ),
@@ -172,12 +169,12 @@ class _DaftarAkunState extends State<DaftarAkun> {
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
                                   SizedBox(height: 50),
-                                  Lottie.asset(
-                                    "assets/images/animations/successgraduation.json",
-                                    width: 90,
-                                    height: 100,
-                                    fit: BoxFit.cover,
-                                  ),
+                                  // Lottie.asset(
+                                  //   "assets/images/animations/successgraduation.json",
+                                  //   width: 90,
+                                  //   height: 100,
+                                  //   fit: BoxFit.cover,
+                                  // ),
                                   SizedBox(height: 20),
                                   Text("Akun berhasil dibuat"),
                                 ],

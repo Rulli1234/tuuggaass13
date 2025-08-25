@@ -1,9 +1,5 @@
-// import 'package:flutter/gestures.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
-// import 'package:shopping_app/model/user.dart';
-// import 'package:shopping_app/sqflite/db_helper.dart';
 import 'package:tugas13/model/user.dart';
 import 'package:tugas13/sqflite/db_helper.dart';
 
@@ -37,7 +33,7 @@ class _DaftarAkunState extends State<DaftarAkun> {
                   height: 50,
                   width: double.infinity,
                   child: Text(
-                    "Halo!, Selamat Daftar 👋",
+                    "Selamat daftar Brother",
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.w900),
                   ),
                 ),
@@ -45,7 +41,7 @@ class _DaftarAkunState extends State<DaftarAkun> {
                   height: 40,
                   width: double.infinity,
                   child: Text(
-                    "Masuk sekarang dan catat semua kebutuhanmu dengan mudah",
+                    "Masuk Brother",
                     style: TextStyle(fontSize: 15, fontWeight: FontWeight.w200),
                     textAlign: TextAlign.left,
                   ),
@@ -74,7 +70,7 @@ class _DaftarAkunState extends State<DaftarAkun> {
                   width: double.infinity,
 
                   child: Text(
-                    "Email",
+                    "Surel",
                     style: TextStyle(fontWeight: FontWeight.w200),
                   ),
                 ),
@@ -88,10 +84,10 @@ class _DaftarAkunState extends State<DaftarAkun> {
                   ),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
-                      return "Email Tidak Valid";
+                      return "Surel Tidak Valid";
                     }
                     if (!value.contains("@")) {
-                      return "Email tidak valid";
+                      return "Surel tidak valid";
                     }
                     return null;
                   },
@@ -102,7 +98,7 @@ class _DaftarAkunState extends State<DaftarAkun> {
                 SizedBox(
                   width: double.infinity,
                   child: Text(
-                    "Password",
+                    "Kata Sandi",
                     style: TextStyle(fontWeight: FontWeight.w200),
                   ),
                 ),
@@ -131,10 +127,10 @@ class _DaftarAkunState extends State<DaftarAkun> {
                   ),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
-                      return "Password tidak boleh kosong";
+                      return "Kata Sandi tidak boleh kosong";
                     }
                     if (value.length < 6) {
-                      return "Password minimal 6 karakter";
+                      return "Kata Sandi minimal 6 karakter";
                     }
                     return null;
                   },
@@ -172,14 +168,14 @@ class _DaftarAkunState extends State<DaftarAkun> {
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
                                   SizedBox(height: 50),
-                                  Lottie.asset(
-                                    "assets/images/animations/successgraduation.json",
-                                    width: 90,
-                                    height: 100,
-                                    fit: BoxFit.cover,
-                                  ),
+                                  // Lottie.asset(
+                                  //   "assets/images/animations/successgraduation.json",
+                                  //   width: 90,
+                                  //   height: 100,
+                                  //   fit: BoxFit.cover,
+                                  // ),
                                   SizedBox(height: 20),
-                                  Text("Akun berhasil dibuat"),
+                                  Text("Akun dah dibuat"),
                                 ],
                               ),
                               actions: [
@@ -198,7 +194,7 @@ class _DaftarAkunState extends State<DaftarAkun> {
                     },
 
                     child: Text(
-                      "Daftar",
+                      "Daftar Brother",
                       style: TextStyle(
                         color: const Color.fromARGB(255, 2, 2, 2),
                       ),

@@ -1,3 +1,5 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'package:flutter/material.dart';
 // import 'package:shopping_app/model/belanja.dart';
 // import 'package:shopping_app/sqflite/db_helper.dart';
@@ -14,10 +16,10 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   List<ShoppingItem> items = [];
   final List<String> kategoriList = [
-    "Makanan",
-    "Minuman",
-    "Elektronik",
-    "Pakaian",
+    "Laptop",
+    "AC",
+    "Sparepart AC",
+    "Sparepart Laptop",
   ];
 
   @override
@@ -128,7 +130,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Daftar Belanja"),
-        backgroundColor: const Color.fromARGB(255, 243, 191, 227),
+        backgroundColor: const Color.fromARGB(255, 92, 189, 59),
       ),
       body: items.isEmpty
           ? const Center(child: Text("Belum ada data"))

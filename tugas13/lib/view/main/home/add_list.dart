@@ -1,3 +1,5 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'package:flutter/material.dart';
 // import 'package:shopping_app/model/belanja.dart';
 // import 'package:shopping_app/sqflite/db_helper.dart';
@@ -18,10 +20,10 @@ class _AddShoppingPageState extends State<AddShoppingPage> {
 
   String? _kategori;
   final List<String> kategoriList = [
-    "Makanan",
-    "Minuman",
-    "Elektronik",
-    "Pakaian",
+    "Laptop",
+    "AC",
+    "Sparepart AC",
+    "Sparepart Laptop",
   ];
 
   // Fungsi untuk menyimpan data
@@ -79,8 +81,8 @@ class _AddShoppingPageState extends State<AddShoppingPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Tambah Belanja"),
-        backgroundColor: const Color.fromARGB(255, 243, 191, 227),
+        title: const Text("Tambah barang"),
+        backgroundColor: const Color.fromARGB(255, 92, 189, 59),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),
