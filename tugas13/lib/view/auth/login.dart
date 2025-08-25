@@ -3,7 +3,7 @@
 
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
+// import 'package:lottie/lottie.dart';
 import 'package:tugas13/extension/navigation.dart';
 import 'package:tugas13/shared_preferences/shared_preferences.dart';
 import 'package:tugas13/sqflite/db_helper.dart';
@@ -129,7 +129,7 @@ class _LoginState extends State<Login> {
                     child: Text(
                       "Lupa Kata Sandi?",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 145, 57, 105),
+                        color: const Color.fromARGB(255, 92, 189, 59),
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -144,7 +144,7 @@ class _LoginState extends State<Login> {
                   child: ElevatedButton(
                     style: ButtonStyle(
                       backgroundColor: WidgetStateProperty.all<Color>(
-                        const Color.fromARGB(255, 247, 230, 242),
+                        const Color.fromARGB(255, 92, 189, 59),
                       ),
                     ),
 
@@ -199,12 +199,6 @@ class _LoginState extends State<Login> {
                                   children: [
                                     Text("Surel atau Kata Sandi salah"),
                                     SizedBox(height: 20),
-                                    Lottie.asset(
-                                      "assets/images/animations/Fail.json",
-                                      width: 90,
-                                      height: 100,
-                                      fit: BoxFit.cover,
-                                    ),
                                   ],
                                 ),
                                 actions: [
@@ -241,7 +235,7 @@ class _LoginState extends State<Login> {
                         TextSpan(
                           text: "Daftar Sekarang Brother",
                           style: TextStyle(
-                            color: const Color.fromARGB(255, 145, 57, 105),
+                            color: const Color.fromARGB(255, 42, 179, 42),
                             fontWeight: FontWeight.bold,
                           ),
                           recognizer: TapGestureRecognizer()

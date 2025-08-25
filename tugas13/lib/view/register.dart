@@ -144,7 +144,7 @@ class _DaftarAkunState extends State<DaftarAkun> {
                   child: ElevatedButton(
                     style: ButtonStyle(
                       backgroundColor: WidgetStateProperty.all<Color>(
-                        const Color.fromARGB(255, 247, 230, 242),
+                        const Color.fromARGB(255, 92, 189, 59),
                       ),
                     ),
 
@@ -213,7 +213,7 @@ class _DaftarAkunState extends State<DaftarAkun> {
                         TextSpan(
                           text: "Masuk Sekarang",
                           style: TextStyle(
-                            color: const Color.fromARGB(255, 145, 57, 105),
+                            color: const Color.fromARGB(255, 92, 189, 59),
                             fontWeight: FontWeight.bold,
                           ),
                           recognizer: TapGestureRecognizer()

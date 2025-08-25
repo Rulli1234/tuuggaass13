@@ -28,22 +28,16 @@ class _AboutPageState extends State<AboutPage> {
         child: Column(
           children: [
             ListTile(
-              leading: Icon(Icons.person),
+              leading: Icon(Icons.person_2),
               title: Text("Pengaturan Akun"),
             ),
             Divider(),
-            ListTile(leading: Icon(Icons.pallet), title: Text("Tentang")),
-            Divider(),
             ListTile(
-              leading: Icon(Icons.settings),
-              title: Text("Pengaturan Aplikasi"),
+              leading: Icon(Icons.android),
+              title: Text("Tentang Aplikasi"),
             ),
             Divider(),
-            ListTile(
-              leading: Icon(Icons.nightlight),
-              title: Text("Mode  Gelap"),
-            ),
-            Divider(),
+
             SizedBox(height: 24),
 
             ElevatedButton(

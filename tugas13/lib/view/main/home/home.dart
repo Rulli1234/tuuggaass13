@@ -139,7 +139,7 @@ class _HomePageState extends State<HomePage> {
               itemBuilder: (BuildContext context, int index) {
                 final item = items[index];
                 return Card(
-                  color: const Color.fromARGB(255, 243, 191, 227),
+                  color: const Color.fromARGB(255, 92, 189, 59),
                   margin: const EdgeInsets.all(8),
                   child: ListTile(
                     title: Text(item.nama),
